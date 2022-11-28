@@ -1,0 +1,14 @@
+{
+  "fields": {
+    "Duns_no": "(duns)",
+    "razao_social": "(razao)",
+    "sigla_analista": "(sigla)",
+    "data_relatorio": "(data_relatorio)",
+    "data_pendencia":"(data_pendencia)",
+    "email_contato":"(email_contato)",
+    "email_analista":"(email_analista)",
+    "nome_analista":"(nome_analista)",
+    "id_empresa":"(id_empresa)"
+  },
+	"typecast": true
+}
