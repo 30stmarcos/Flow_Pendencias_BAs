@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,4193" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1120.8,4490.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="44">
       <x:String>System.Activities</x:String>
@@ -111,13 +111,13 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1011,4128" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1131.2,4425.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="969,4038" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence sap:VirtualizedContainerService.HintSize="1068.8,4302.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="dt_pendencias" />
         <Variable x:TypeArguments="x:String" Name="str_datatable" />
@@ -127,53 +127,53 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="907,3782" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1006.4,4044.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
         <ueab:ExcelProcessScopeX.Body>
           <ActivityAction x:TypeArguments="ui:IExcelProcess">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="873,3686" sap2010:WorkflowViewState.IdRef="Sequence_14">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="972.8,3948.8" sap2010:WorkflowViewState.IdRef="Sequence_14">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="831,3596" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="Maximize" WorkbookPath="PendenciaDiariaTeste.xlsx">
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="910.4,3825.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="Maximize" WorkbookPath="PendenciaDiariaTeste.xlsx">
                 <ueab:ExcelApplicationCard.Body>
                   <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="797,3318" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="876.8,3546.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ueab:RefreshDataConnectionsX DisplayName="Refresh Excel Data Connections" sap:VirtualizedContainerService.HintSize="755,99" sap2010:WorkflowViewState.IdRef="RefreshDataConnectionsX_2" Workbook="[Excel]" />
-                      <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="755,178" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Table(&quot;Pendencias&quot;)]" SaveTo="[dt_pendencias]" />
-                      <If Condition="[dt_pendencias Is Nothing OrElse dt_pendencias.Rows.Count = 0]" sap:VirtualizedContainerService.HintSize="755,2871" sap2010:WorkflowViewState.IdRef="If_5">
+                      <ueab:RefreshDataConnectionsX DisplayName="Refresh Excel Data Connections" sap:VirtualizedContainerService.HintSize="814.4,100" sap2010:WorkflowViewState.IdRef="RefreshDataConnectionsX_2" Workbook="[Excel]" />
+                      <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="814.4,179.2" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Table(&quot;Pendencias&quot;)]" SaveTo="[dt_pendencias]" />
+                      <If Condition="[dt_pendencias Is Nothing OrElse dt_pendencias.Rows.Count = 0]" sap:VirtualizedContainerService.HintSize="814.4,3064" sap2010:WorkflowViewState.IdRef="If_5">
                         <If.Then>
-                          <Sequence sap:VirtualizedContainerService.HintSize="400,340" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                          <Sequence sap:VirtualizedContainerService.HintSize="400,376.8" sap2010:WorkflowViewState.IdRef="Sequence_19">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:02" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="358,94" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;Não há casos com pendência para hoje :)&quot;]" />
-                            <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Não há pendências hoje.&quot;]" />
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:02" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="337.6,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;Não há casos com pendência para hoje :)&quot;]" />
+                            <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="337.6,118.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Não há pendências hoje.&quot;]" />
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence sap:VirtualizedContainerService.HintSize="673,2368" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                          <Sequence sap:VirtualizedContainerService.HintSize="732.8,2521.6" sap2010:WorkflowViewState.IdRef="Sequence_23">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:02" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="631,94" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Pendências encontradas, iniciando processo.&quot;]" />
-                            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="631,2144" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Table(&quot;Pendencias&quot;)]" SaveAfterEachRow="False">
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:02" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="670.4,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Pendências encontradas, iniciando processo.&quot;]" />
+                            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="670.4,2263.2" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Table(&quot;Pendencias&quot;)]" SaveAfterEachRow="False">
                               <ueab:ExcelForEachRowX.Body>
                                 <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                                   <ActivityAction.Argument1>
@@ -182,22 +182,22 @@
                                   <ActivityAction.Argument2>
                                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                                   </ActivityAction.Argument2>
-                                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="597,1953" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="636.8,2069.6" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <If Condition="[CurrentRow.ByField(&quot;email_contato&quot;) = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="555,1863" sap2010:WorkflowViewState.IdRef="If_6">
+                                    <If Condition="[CurrentRow.ByField(&quot;email_contato&quot;) = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="574.4,1946.4" sap2010:WorkflowViewState.IdRef="If_6">
                                       <If.Then>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="400,401" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                        <Sequence sap:VirtualizedContainerService.HintSize="400,437.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Warn" Message="[&quot;Caso &quot; + CurrentRow.ByField(&quot;Duns_no&quot;).ToString +&quot; sem e-mail de contato, cobrança não enviada.&quot;]" />
-                                          <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Caso &quot; + CurrentRow.ByField(&quot;Duns_no&quot;).ToString +&quot; sem e-mail de contato, cobrança não enviada.&quot;]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="358,155" sap2010:WorkflowViewState.IdRef="SendOutlookMail_4" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Lembrete de informações" To="[CurrentRow.ByField(&quot;email_analista&quot;).ToString]">
+                                          <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="337.6,118.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Warn" Message="[&quot;Caso &quot; + CurrentRow.ByField(&quot;Duns_no&quot;).ToString +&quot; sem e-mail de contato, cobrança não enviada.&quot;]" />
+                                          <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Caso &quot; + CurrentRow.ByField(&quot;Duns_no&quot;).ToString +&quot; sem e-mail de contato, cobrança não enviada.&quot;]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="337.6,156" sap2010:WorkflowViewState.IdRef="SendOutlookMail_4" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="Lembrete de informações" To="[CurrentRow.ByField(&quot;email_analista&quot;).ToString]">
                                             <ui:SendOutlookMail.Files>
                                               <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                                             </ui:SendOutlookMail.Files>
@@ -205,7 +205,7 @@
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
-                                        <Sequence sap:VirtualizedContainerService.HintSize="473,1299" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                        <Sequence sap:VirtualizedContainerService.HintSize="492.8,1343.2" sap2010:WorkflowViewState.IdRef="Sequence_21">
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="x:String" Name="nome_analista" />
                                             <Variable x:TypeArguments="x:String" Name="razao_social" />
@@ -222,8 +222,8 @@
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:ReadTextFile File="{x:Null}" Content="[html_email]" DisplayName="Read Text File" FileName="html\Corpo_email.html" sap:VirtualizedContainerService.HintSize="431,89" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-                                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,234" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                                          <ui:ReadTextFile File="{x:Null}" Content="[html_email]" DisplayName="Read Text File" FileName="html\Corpo_email.html" sap:VirtualizedContainerService.HintSize="430.4,90.4" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+                                          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,236" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
                                             <ui:MultipleAssign.AssignOperations>
                                               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                                                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
@@ -269,14 +269,14 @@
                                               </scg:List>
                                             </ui:MultipleAssign.AssignOperations>
                                           </ui:MultipleAssign>
-                                          <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[texto_email.ToString]" Cc="[CurrentRow.ByField(&quot;email_analista&quot;).ToString]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="431,155" sap2010:WorkflowViewState.IdRef="SendOutlookMail_3" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="Lembrete de informações" To="[CurrentRow.ByField(&quot;email_contato&quot;).ToString]">
+                                          <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[texto_email.ToString]" Cc="[CurrentRow.ByField(&quot;email_analista&quot;).ToString]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="430.4,156" sap2010:WorkflowViewState.IdRef="SendOutlookMail_3" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="Lembrete de informações" To="[CurrentRow.ByField(&quot;email_contato&quot;).ToString]">
                                             <ui:SendOutlookMail.Files>
                                               <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                                             </ui:SendOutlookMail.Files>
                                           </ui:SendOutlookMail>
-                                          <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="431,116" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;E-mail de cobrança enviado para o caso&quot; + CurrentRow.ByField(&quot;Duns_no&quot;).ToString]" />
-                                          <ui:ReadTextFile File="{x:Null}" Content="[txt_json]" DisplayName="Read Text File" FileName="json_airtable.txt" sap:VirtualizedContainerService.HintSize="431,89" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
-                                          <Assign sap:VirtualizedContainerService.HintSize="431,70" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                          <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="430.4,118.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;E-mail de cobrança enviado para o caso&quot; + CurrentRow.ByField(&quot;Duns_no&quot;).ToString]" />
+                                          <ui:ReadTextFile File="{x:Null}" Content="[txt_json]" DisplayName="Read Text File" FileName="json_airtable.txt" sap:VirtualizedContainerService.HintSize="430.4,90.4" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+                                          <Assign sap:VirtualizedContainerService.HintSize="430.4,69.6" sap2010:WorkflowViewState.IdRef="Assign_1">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:String">[json_airtable]</OutArgument>
                                             </Assign.To>
@@ -284,8 +284,8 @@
                                               <InArgument x:TypeArguments="x:String">[txt_json.Replace("(duns)",CurrentRow.ByField("Duns_no").ToString).Replace("(razao)",CurrentRow.ByField("razao_social").ToString).Replace("(sigla)",CurrentRow.ByField("sigla_analista").ToString).Replace("(data_relatorio)",CurrentRow.ByField("data_relatorio").ToString).Replace("(data_pendencia)",CurrentRow.ByField("data_pendencia").ToString).Replace("(email_contato)",CurrentRow.ByField("email_contato").ToString).Replace("(email_analista)",CurrentRow.ByField("email_analista").ToString).Replace("(nome_analista)",CurrentRow.ByField("nome_analista").ToString).Replace("(id_empresa)",CurrentRow.ByField("id_empresa").ToString)]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="431,97" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[json_airtable.ToString]" />
-                                          <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[json_airtable]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="False" EndPoint="https://api.airtable.com/v0/appo79yXVzkTZidU3/Overview%20Pendencias" sap:VirtualizedContainerService.HintSize="431,79" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" TimeoutMS="15000">
+                                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="430.4,98.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[json_airtable.ToString]" />
+                                          <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[json_airtable]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="False" EndPoint="https://api.airtable.com/v0/appo79yXVzkTZidU3/Overview%20Pendencias" sap:VirtualizedContainerService.HintSize="430.4,80.8" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" TimeoutMS="15000">
                                             <ui:HttpClient.Attachments>
                                               <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                                             </ui:HttpClient.Attachments>
